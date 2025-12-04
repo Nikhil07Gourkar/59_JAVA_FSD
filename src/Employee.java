@@ -1,4 +1,5 @@
 public class Employee {
+
     private String empId;
     private String name;
     private double basicSalary;
@@ -9,6 +10,7 @@ public class Employee {
     private int totalDays;
     private int presentDays;
 
+    // Constructor
     public Employee(String empId, String name, double basicSalary, int totalDays, int presentDays) {
         this.empId = empId;
         this.name = name;
@@ -19,15 +21,23 @@ public class Employee {
         calculateSalary();
     }
 
-    public void calculateSalary() {
-        hra = basicSalary * 0.20;
-        da = basicSalary * 0.10;
-        tax = basicSalary * 0.05;
+    // Salary Calculation Logic
+    private void calculateSalary() {
 
-        double deduction = ((totalDays - presentDays) / (double) totalDays) * basicSalary;
+        // Allowances
+        hra = basicSalary * 0.20;  // 20% HRA
+        da  = basicSalary * 0.10;  // 10% DA
+        tax = basicSalary * 0.05;  // 5% TAX
+
+        // Attendance-based deduction
+        double absentDays = totalDays - presentDays;
+        double deduction = (absentDays / totalDays) * basicSalary;
+
+        // Final Net Salary
         netSalary = basicSalary + hra + da - tax - deduction;
     }
 
+    // Getters
     public String getEmpId() { return empId; }
     public String getName() { return name; }
     public double getBasicSalary() { return basicSalary; }
