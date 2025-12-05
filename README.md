@@ -45,19 +45,7 @@ The project demonstrates:
 
 ---
 
----
 
-## 📸 Screenshots
-<img width="509" height="437" alt="image" src="https://github.com/user-attachments/assets/ce60f663-cf55-40e8-a065-1b6b09bf4f04" />
-<img width="1230" height="791" alt="image" src="https://github.com/user-attachments/assets/d641c592-08d1-45c7-b682-bbebbfc664d2" />
-<img width="1228" height="796" alt="image" src="https://github.com/user-attachments/assets/92ed9945-f2c1-4cde-8852-550258efde4e" />
-<img width="1227" height="795" alt="image" src="https://github.com/user-attachments/assets/705c7685-bdcb-40b7-b74d-f7577bb2381f" />
-<img width="1230" height="798" alt="image" src="https://github.com/user-attachments/assets/da4e9d34-2241-4d9f-8f66-8bd4157de2bd" />
-
-
-
-
----
 
 ## ⚙ How to Run
 
